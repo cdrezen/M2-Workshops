@@ -30,6 +30,11 @@ repository.init().then(() => {
         console.log("get")
         res.render('workshop')
     })
+
+    app.get('/update', function (req, res) {
+        console.log("get")
+        res.render('update')
+    })
     
     app.post('/workshop', function (req, res) {
         const name = req.body.name
